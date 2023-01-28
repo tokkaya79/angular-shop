@@ -1,11 +1,23 @@
+.header{
+margin-bottom: 40px;
+background-color: #6495ed;
+color: #fff;
+font-size: 24px;
+line-height: 1.5;
+letter-spacing: 1px;
+
+}
+
 .example-spacer {
   flex: 1 1 auto;
+  display: flex;
+  justify-content: space-around;
 }
 .toolbar {
   display: flex;
   align-items: center;
   &.button{
-    margin-left: 5px;
+    margin-left: 15px;
     &:first-child{
       margin-left: 0;
     }
@@ -14,4 +26,12 @@
 .no-select{
   cursor: pointer;
   user-select: none;
+}
+.mat-toolbar-row, .mat-toolbar-single-row{
+  padding: 0 200px;
+}
+.mat-toolbar .mat-mdc-button-base.mat-unthemed{
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.48);
+  color: #5983d1;
+  font-size: 18px;
 }

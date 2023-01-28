@@ -3,9 +3,36 @@
   max-width: 1170px;
   display: flex;
   flex-wrap: wrap;
+  gap: 25px;
   align-items: center;
   justify-content: flex-start;
+  background-color: inherit;
+}
+.example-card {
+  margin: 0 auto;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.48);
 }
 .button {
   margin-right: 5px;
+  background-color: #6495ed;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.48);
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
 }
+.mat-mdc-card {
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.mat-icon.mat-accent {
+  color: #6495ed;
+
+}
+
+
+
