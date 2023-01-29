@@ -1,20 +1,16 @@
-import { Component, OnInit, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { Component, Inject } from '@angular/core';
+import { DialogData } from '../product-detail/product-detail.component';
+import { DIALOG_DATA} from '@angular/cdk/dialog';
 
 @Component({
   selector: 'app-dialog-box',
   templateUrl: './dialog-box.component.html',
   styleUrls: ['./dialog-box.component.scss'],
 })
-export class DialogBoxComponent implements OnInit {
+
+
+export class DialogBoxComponent{
   constructor(
-    public dialogRef: MatDialogRef<DialogBoxComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any
-  ) {}
+    @Inject(DIALOG_DATA) public data: DialogData) {}
 
-  onNoClick(): void {
-    this.dialogRef.close();
-  }
-
-  ngOnInit(): void {}
-}
+ }
