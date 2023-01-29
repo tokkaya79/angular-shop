@@ -16,6 +16,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import {DialogModule} from '@angular/cdk/dialog';
+
 
 
 
@@ -38,7 +40,8 @@ import {MatCardModule} from '@angular/material/card';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent],
