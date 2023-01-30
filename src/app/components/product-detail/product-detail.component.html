@@ -1,7 +1,7 @@
 <mat-toolbar class="sub-header" color="accent">
   <span class="example-spacer"></span>
   <div class="toolbar no-select">
-    <button class="toolbar button" mat-flat-button routerLink="basket" (click)="openDialog()">
+    <button class="toolbar button" mat-flat-button [routerLink]="['/product', product.id]" (click)="openDialog()">
       Add to cart
     </button>
     <mat-icon color="white">favorite</mat-icon>

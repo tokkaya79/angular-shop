@@ -1,6 +1,18 @@
-:host {
-  display: block;
-  background: #fff;
-  border-radius: 8px;
-  padding: 8px 16px;
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+.button {
+  margin-right: 5px;
+  background-color: #6495ed;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.48);
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
 }

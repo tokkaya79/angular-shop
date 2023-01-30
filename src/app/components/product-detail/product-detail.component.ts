@@ -7,6 +7,8 @@ import { DialogBoxComponent } from '../dialog-box/dialog-box.component';
 import { Dialog } from '@angular/cdk/dialog';
 
 
+
+
 export interface DialogData {
   animal: 'panda'
 }
@@ -20,10 +22,11 @@ export interface DialogData {
 
 
 
-export class ProductDetailComponent implements OnInit{
+export class ProductDetailComponent implements OnInit {
 
   product: IProducts
   productSubscription: Subscription
+
 
   constructor(private route: ActivatedRoute, public dialog: Dialog) {}
 
@@ -33,13 +36,15 @@ export class ProductDetailComponent implements OnInit{
       this.product = data['data']
      })
   }
+
     openDialog(): void {
     this.dialog.open(DialogBoxComponent, {
-      minWidth: "300px",
-      data: {
-        animal: "panda"
-      }
-    });
+      disableClose: true
+    })
+
 
   }
+
+
+
 }

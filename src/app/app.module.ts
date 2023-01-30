@@ -17,6 +17,8 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {DialogModule} from '@angular/cdk/dialog';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
 
 
 
@@ -41,7 +43,10 @@ import {DialogModule} from '@angular/cdk/dialog';
     MatButtonModule,
     MatCardModule,
     HttpClientModule,
-    DialogModule
+    DialogModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent],
