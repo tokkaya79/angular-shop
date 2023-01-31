@@ -10,6 +10,7 @@ import { IProducts } from "src/app/models/products";
 export class ProductsService{
 
   url: string = 'http://localhost:3000/products'
+  urlBasket: string = 'http://localhost:3000/basket'
 
   constructor(private http: HttpClient) {}
 
@@ -20,6 +21,20 @@ export class ProductsService{
 
     getProduct(id: number) {
       return this.http.get<IProducts>(`${this.url}/${id}`)
+    }
+
+    postProduct(product: IProducts) {
+      return this.http.post<IProducts>(this.url, product)
+
+    }
+
+      postProductToBasket(product: IProducts) {
+      return this.http.post<IProducts>(this.urlBasket, product)
+
+    }
+
+      getProductsToBasket() {
+      return this.http.get<IProducts[]>(this.urlBasket)
     }
 
 

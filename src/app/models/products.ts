@@ -5,7 +5,8 @@ export interface IProducts {
   model: string,
   price: number,
   image?: string,
-  configure: any
+  configure: any,
+  quantity?: number
 
 }
 

@@ -10,13 +10,10 @@ import { ProductsService } from 'src/services/products.service';
 })
 export class ProductsComponent implements OnInit {
 
-  products: IProducts[]
-  productsSubscription: Subscription
-
-
-
   constructor(private ProductsService: ProductsService) { }
 
+  products: IProducts[]
+  productsSubscription: Subscription
 
   ngOnInit(): void {
     this.productsSubscription = this.ProductsService.getProducts().subscribe((data) => { this.products = data})
@@ -25,6 +22,12 @@ export class ProductsComponent implements OnInit {
 
   ngOnDestroy() {
     if (this.productsSubscription) this.productsSubscription.unsubscribe()
+  }
+
+  addToBasket(product: IProducts) {
+    this.ProductsService.postProductToBasket(product).subscribe((data) => console.log(data)
+    )
+
   }
 
 }

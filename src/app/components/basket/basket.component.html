@@ -1,1 +1,17 @@
-<p>basket works!</p>
+<div class="container">
+  <mat-card class="example-card" *ngFor="let item of basket">
+  <mat-card-header>
+    <mat-card-title>{{item.title}}</mat-card-title>
+    <mat-card-subtitle >Model: {{item.model}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <img class="image" mat-card-image style="max-width: 200px; max-height: 200px" src={{item.image}} alt="">
+    <p>Prise: {{item.price | currency:'EUR'}}</p>
+  </mat-card-content>
+    <mat-card-actions>
+    <button class="button" mat-flat-button color="accent"  type="button">-</button>
+    <span>123</span>
+    <button class="button" mat-flat-button color="accent"  type="button">+</button>
+  </mat-card-actions>
+</mat-card>
+</div>
