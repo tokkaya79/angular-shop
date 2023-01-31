@@ -42,5 +42,9 @@ export class ProductsService{
 
     }
 
+    removeItemFromBasket(id: number) {
+      return this.http.delete<any>(`${this.urlBasket}/${id}`)
+    }
+
 
 }

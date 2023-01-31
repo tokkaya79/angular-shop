@@ -25,4 +25,24 @@ export class BasketComponent implements OnInit {
   ngOnDestroy() {
     if (this.basketSubskription) this.basketSubskription.unsubscribe()
   }
+
+  minusItem(item: IProducts){
+
+    if (item.quantity === 1) {
+      this.ProductsService.removeItemFromBasket(item.id).subscribe(() => {
+          let idx = this.basket.findIndex((data) => data.id === item.id)
+          this.basket.splice(idx, 1)
+      })
+    } else {
+    item.quantity -= 1
+    this.ProductsService.updateProductsToBasket(item).subscribe((data) => {})
+
+    }
+
+  }
+
+  plusItem(item: IProducts) {
+    item.quantity += 1
+    this.ProductsService.updateProductsToBasket(item).subscribe((data) => {})
+  }
 }

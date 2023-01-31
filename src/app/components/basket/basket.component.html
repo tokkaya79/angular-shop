@@ -9,9 +9,9 @@
     <p>Prise: {{item.price | currency:'EUR'}}</p>
   </mat-card-content>
     <mat-card-actions>
-    <button class="button" mat-flat-button color="accent"  type="button">-</button>
+    <button class="button" mat-flat-button color="accent"  type="button" (click)="minusItem(item)">-</button>
     <span>{{item.quantity}}</span>
-    <button class="button" mat-flat-button color="accent"  type="button">+</button>
+    <button class="button" mat-flat-button color="accent"  type="button" (click)="plusItem(item)">+</button>
   </mat-card-actions>
 </mat-card>
 </div>
