@@ -6,7 +6,7 @@ export interface IProducts {
   price: number,
   image?: string,
   configure: any,
-  quantity?: number
+  quantity: number
 
 }
 
