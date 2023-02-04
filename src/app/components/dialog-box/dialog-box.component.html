@@ -1,6 +1,6 @@
-<form class="example-form"[formGroup]="myForm" (ngSubmit)="onSubmit()">
+<form class="example-form" [formGroup]="myForm" (ngSubmit)="onSubmit()" >
   <mat-form-field class="example-full-width">
-    <mat-label>Title</mat-label>
+    <mat-label>Name</mat-label>
     <input matInput formControlName="title">
   </mat-form-field>
   <mat-form-field class="example-full-width">
@@ -21,6 +21,6 @@
   </mat-form-field>
 
 
-   <button class="button" mat-flat-button color="accent" type="submit">Add item</button>
+   <button class="button" mat-flat-button color="accent" type="submit" (click)="onNoClick()">Search</button>
    <button class="button" mat-flat-button color="accent" (click)="onNoClick()">Close</button>
 </form>

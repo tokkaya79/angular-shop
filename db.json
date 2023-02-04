@@ -105,34 +105,5 @@
       }
     }
   ],
-  "basket": [
-    {
-      "id": 8,
-      "title": "MacBook Pro 13",
-      "model": "Core i5 1.3 GHz SSD 512Gb RAM 8Gb Space Gray (MNYG2) 2017",
-      "price": "2050",
-      "image": "assets/images/good2.jpg",
-      "configure": {
-        "chip": "M1",
-        "SSD": "226 GB",
-        "memory": "16 GB",
-        "display": "Retina"
-      },
-      "quantity": 1
-    },
-    {
-      "id": 4,
-      "title": "MacBook Air",
-      "model": "Core i5 1.3 GHz SSD 512Gb RAM 8Gb Space Gray (MNYG2) 2017",
-      "price": "2150",
-      "image": "assets/images/good4.jpg",
-      "configure": {
-        "chip": "M2",
-        "SSD": "226 GB",
-        "memory": "16 GB",
-        "display": "Retina"
-      },
-      "quantity": 1
-    }
-  ]
+  "basket": []
 }
